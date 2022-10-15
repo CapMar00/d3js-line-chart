@@ -1,0 +1,47 @@
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+a:link {
+  color: #664147;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #664147;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #40c9a2;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #40c9a2;
+  text-decoration: underline;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  padding: 2px;
+  font: 16px;
+  background: #85eccf;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.line {
+  fill: none;
+  stroke: #2f9c95;
+  stroke-width: 3px;
+}
+
+.source {
+  padding-top: 30px;
+  font-size: 0.8em;
+}
