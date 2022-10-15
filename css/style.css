@@ -3,22 +3,22 @@ body {
 }
 
 a:link {
-  color: #664147;
+  color: #fb5c01;
   text-decoration: none;
 }
 
 a:visited {
-  color: #664147;
+  color: #fb5c01;
   text-decoration: none;
 }
 
 a:hover {
-  color: #40c9a2;
+  color: #fb5c01;
   text-decoration: underline;
 }
 
 a:active {
-  color: #40c9a2;
+  color: #fb5c01;
   text-decoration: underline;
 }
 
@@ -29,7 +29,8 @@ div.tooltip {
   height: 40px;
   padding: 2px;
   font: 16px;
-  background: #85eccf;
+  background: #1c7af5;
+  color: #fff;
   border: 0px;
   border-radius: 8px;
   pointer-events: none;
@@ -37,7 +38,7 @@ div.tooltip {
 
 .line {
   fill: none;
-  stroke: #2f9c95;
+  stroke: #1c7af5;
   stroke-width: 3px;
 }
 
