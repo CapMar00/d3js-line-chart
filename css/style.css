@@ -36,6 +36,11 @@ div.tooltip {
   pointer-events: none;
 }
 
+#container {
+  width: fit-content;
+  margin: auto;
+}
+
 .line {
   fill: none;
   stroke: #1c7af5;

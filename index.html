@@ -14,23 +14,20 @@
 </head>
 
 <body>
-    <h1>Prezzo del gasolio per riscaldamento</h1>
-    <p>Prezzi settimanali dal 2005 a oggi</p>
-
     <div id="container">
+        <h1>Prezzo del gasolio per riscaldamento</h1>
+        <p>Prezzi settimanali dal 2005 a oggi</p>
+
         <svg id="chart" width="700" height="400">
-            <g id="chart_body" transform="translate(50,50)"">
-
-            </g>
+            <g id="chart_body" transform="translate(50,50)""></g>
         </svg>
+
+
+    <div class=" source">
+                Fonte: <a href="https://dgsaie.mise.gov.it/open-data" target="_blank" rel="noopener noreferrer">
+                    Ministero della Transizione Ecologica - Direzione Generale Infrastrutture e Sicurezza</a>
     </div>
-
-
-    <div class=" source">Fonte: <a href="https://dgsaie.mise.gov.it/open-data" target="_blank"
-                    rel="noopener noreferrer">Ministero della Transizione Ecologica - Direzione Generale Infrastrutture
-                    e Sicurezza</a>
     </div>
-
     <script>
         const dateFormatter = d3.timeFormat("%d %B %Y");
 
@@ -51,13 +48,19 @@
 
             const maxValue = d3.max(data, d => d.price)
 
-            const yScale = d3.scaleLinear().range([height, 0]).domain([0, maxValue]);
+            const yScale = d3.scaleLinear()
+                .range([height, 0])
+                .domain([0, maxValue]);
 
+            const xScale = d3.scaleTime()
+                .range([0, width])
+                .domain(d3.extent(data, d => d.date))
 
-            const xScale = d3.scaleTime().range([0, width]).domain(d3.extent(data, d => d.date))
-
-            body.append("g").call(d3.axisLeft(yScale))
-            body.append("g").attr("transform", `translate(0, ${height})`).call(d3.axisBottom(xScale))
+            body.append("g")
+                .call(d3.axisLeft(yScale))
+            body.append("g")
+                .attr("transform", `translate(0, ${height})`)
+                .call(d3.axisBottom(xScale))
 
             const line = d3.line()
                 .x(d => xScale(d.date))
@@ -70,7 +73,7 @@
                 .attr("class", "line")
 
 
-            let div = d3.select("body").append("div")
+            const div = d3.select("body").append("div")
                 .attr("class", "tooltip")
                 .style("opacity", 0);
 
