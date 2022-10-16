@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 447 234" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:guide x="212.67" y="-70.574" angle="90"/>
+  </defs>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 17.9px; white-space: pre;" x="18.919" y="41.4">COORDINATE CARTESIANE</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 17.9px; white-space: pre;" x="296.848" y="40.438">COORDINATE SVG</text>
+  <path d="M 38.787 195.439 H 152.11 L 152.11 191.939 L 175.11 196.939 L 152.11 201.939 L 152.11 198.439 H 38.787 V 195.439 Z" style="stroke: rgb(0, 0, 0); fill: rgb(121, 121, 121); stroke-width: 0px;" bx:shape="arrow 38.787 191.939 136.323 10 3 23 0 1@d76a04fb"/>
+  <path d="M 140.095 248.27 H 248.591 L 248.591 244.426 L 273.85 249.916 L 248.591 255.407 L 248.591 251.563 H 140.095 V 248.27 Z" style="stroke: rgb(0, 0, 0); fill: rgb(121, 121, 121); stroke-width: 0px;" transform="matrix(0, -1, 1, 0, -209.790497, 337.007538)" bx:shape="arrow 140.095 244.426 133.755 10.981 3.294 25.259 0 1@53695c77"/>
+  <path d="M 285.983 217.065 H 399.306 L 399.306 213.565 L 422.306 218.565 L 399.306 223.565 L 399.306 220.065 H 285.983 V 217.065 Z" style="stroke: rgb(0, 0, 0); fill: rgb(121, 121, 121); stroke-width: 0px;" transform="matrix(0, 1, -1, 0, 506.243073, -206.894745)" bx:shape="arrow 285.983 213.565 136.323 10 3 23 0 1@d029f053"/>
+  <path d="M 287.705 78.78 H 396.201 L 396.201 74.937 L 421.46 80.428 L 396.201 85.918 L 396.201 82.075 H 287.705 V 78.78 Z" style="stroke: rgb(0, 0, 0); fill: rgb(121, 121, 121); stroke-width: 0px;" bx:shape="arrow 287.705 74.937 133.755 10.981 3.294 25.259 0 1@25bded24"/>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="30.35" y="216.193">(0,0)</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="273.313" y="71.458">(0,0)</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="164.339" y="217.103">x</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="16.1" y="73.843">y</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="266.905" y="213.155">y</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="417.806" y="73.028">x</text>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="87.235" y="137.109">(5,5)</text>
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="100.742" cy="143.073" rx="3.371" ry="3.371"/>
+  <text style="fill: rgb(121, 121, 121); font-family: Impact; font-size: 15.3px; white-space: pre;" x="337.178" y="154.811">(5,5)</text>
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="350.685" cy="134.775" rx="3.371" ry="3.371"/>
+</svg>

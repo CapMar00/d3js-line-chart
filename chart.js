@@ -44,7 +44,7 @@ const createChart = (data) => {
     .style("opacity", 0);
 
   chartBody
-    .selectAll("dot")
+    .selectAll("circle")
     .data(data)
     .enter()
     .append("circle")
