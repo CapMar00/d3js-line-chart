@@ -53,7 +53,6 @@ const createChart = (data) => {
     .attr("cy", (d) => yScale(d.price))
     .style("opacity", 0)
     .on("mouseover", (d) => {
-      console.log("d", d); // d MouseEvent
       div.transition().duration(200).style("opacity", 0.9);
       div
         .html(
