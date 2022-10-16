@@ -20,7 +20,7 @@ const createChart = (data) => {
   const yScale = d3.scaleLinear().range([height, 0]).domain([0, maxValue]);
   const xScale = d3.scaleTime().range([0, width]).domain(dateRange);
 
-  const line = d3
+  const valueLine = d3
     .line()
     .x((d) => xScale(d.date))
     .y((d) => yScale(d.price));
@@ -31,7 +31,11 @@ const createChart = (data) => {
     .attr("transform", `translate(0, ${height})`)
     .call(d3.axisBottom(xScale));
 
-  chartBody.append("path").datum(data).attr("d", line).attr("class", "line");
+  chartBody
+    .append("path")
+    .datum(data)
+    .attr("d", valueLine)
+    .attr("class", "line");
 
   const div = d3
     .select("body")
