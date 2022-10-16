@@ -14,11 +14,11 @@ const createChart = (data) => {
     price: +d.HEATING_GAS_OIL,
   }));
 
-  const dateRange = d3.extent(data, (d) => d.date);
+  const dateExtent = d3.extent(data, (d) => d.date);
   const maxValue = d3.max(data, (d) => d.price);
 
   const yScale = d3.scaleLinear().domain([0, maxValue]).range([height, 0]);
-  const xScale = d3.scaleTime().domain(dateRange).range([0, width]);
+  const xScale = d3.scaleTime().domain(dateExtent).range([0, width]);
 
   const valueLine = d3
     .line()
