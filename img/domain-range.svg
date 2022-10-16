@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 298 149" xmlns="http://www.w3.org/2000/svg">
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 18.6px; white-space: pre;" x="114.748" y="25.646">DOMAIN</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 18.6px; white-space: pre;" x="121.093" y="132.612">RANGE</text>
+  <rect x="15.869" y="34.585" width="260.456" height="13.602" style="stroke: rgb(0, 0, 0); fill: rgb(28, 122, 244);"/>
+  <rect x="95.646" y="97.155" width="100.253" height="13.602" style="stroke: rgb(0, 0, 0); fill: rgb(251, 92, 1);"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 8.8px; white-space: pre;" x="16.774" y="30.782">100</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 8.8px; white-space: pre;" x="241.628" y="31.814">1.000.000</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 8.8px; white-space: pre;" x="182.264" y="94.105">500</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Impact; font-size: 8.8px; white-space: pre;" x="95.759" y="93.664">0</text>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 15.617 48.187 L 96.376 97.594"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 276.812 48.097 L 195.501 97.611"/>
+</svg>
