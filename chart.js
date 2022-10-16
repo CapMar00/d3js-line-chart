@@ -17,8 +17,8 @@ const createChart = (data) => {
   const dateRange = d3.extent(data, (d) => d.date);
   const maxValue = d3.max(data, (d) => d.price);
 
-  const yScale = d3.scaleLinear().range([height, 0]).domain([0, maxValue]);
-  const xScale = d3.scaleTime().range([0, width]).domain(dateRange);
+  const yScale = d3.scaleLinear().domain([0, maxValue]).range([height, 0]);
+  const xScale = d3.scaleTime().domain(dateRange).range([0, width]);
 
   const valueLine = d3
     .line()
