@@ -1,6 +1,6 @@
 const dateFormatter = d3.timeFormat("%d %B %Y");
-
 const chartBody = d3.select("#chart_body");
+
 d3.csv("data/weekly_fuel_prices_from_2005_to_20221015.csv").then((data) =>
   createChart(data)
 );
@@ -14,25 +14,22 @@ const createChart = (data) => {
     price: +d.HEATING_GAS_OIL,
   }));
 
+  const dateRange = d3.extent(data, (d) => d.date);
   const maxValue = d3.max(data, (d) => d.price);
 
   const yScale = d3.scaleLinear().range([height, 0]).domain([0, maxValue]);
+  const xScale = d3.scaleTime().range([0, width]).domain(dateRange);
 
-  const xScale = d3
-    .scaleTime()
-    .range([0, width])
-    .domain(d3.extent(data, (d) => d.date));
+  const line = d3
+    .line()
+    .x((d) => xScale(d.date))
+    .y((d) => yScale(d.price));
 
   chartBody.append("g").call(d3.axisLeft(yScale));
   chartBody
     .append("g")
     .attr("transform", `translate(0, ${height})`)
     .call(d3.axisBottom(xScale));
-
-  const line = d3
-    .line()
-    .x((d) => xScale(d.date))
-    .y((d) => yScale(d.price));
 
   chartBody.append("path").datum(data).attr("d", line).attr("class", "line");
 
